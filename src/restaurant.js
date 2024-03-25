@@ -66,6 +66,7 @@ function removeMenuItem(data, item, type) {
     for (var m = 0; m < data.menus.lunch.length; ++m) {
       if (data.menus.lunch[m].name === item) {
         data.menus.lunch.splice(m, 1)
+        return ''
       }
     }
     return "Sorry, we don't sell Mom's Spaghetti, try adding a new recipe!"
